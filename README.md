@@ -1,9 +1,6 @@
-## Happiness
-
-FIRST GITHUB REPOSITORY
-
+#Happiness
 ## Function
-Display A lyrics of a song
+Display A lyrics of a song (i chose Happiness by Rex Orange County)
 
 ## Usage
 beginner in learninng Arduino 
