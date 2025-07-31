@@ -6,15 +6,14 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 // Define the lyrics
 String lyrics[] = {
-  "I'll be the one",
-  "Who is waiting",
-  "this looonngg",
   "I am the one",
+  "who's  waited",
+  "this looonngg",
+  "and I am the one",
   "That might get",
   "it wronggg",
-  "and I'll be",
-  "the one",
-  "that will",
+  "and I'll be the",
+  "one that will",
   "love you the way",
   "I'm supposed to",
   "oohhhh girlll"
@@ -41,11 +40,11 @@ void loop() {
     printWords(lyrics[currentLine + 1], 1);
   }
 
-  delay(2000); // Wait before showing next lines
+  delay(2500); // Wait before showing next lines
 
   currentLine += 2;
   if (currentLine >= lineCount) {
-    delay(3000); // Wait longer at the end
+    delay(2000); // Wait longer at the end
     currentLine = 0;
   }
 }
@@ -66,6 +65,6 @@ void printWords(String line, int row) {
     lcd.print(word + " ");
     x += word.length() + 1;
     start = space + 1;
-    delay(400); // Delay between words
+    delay(300); // Delay between words
   }
 }
